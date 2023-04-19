@@ -1,0 +1,3 @@
+# Project exclude paths
+/mybatisplus_01_quickstart/target/
+/mybatisplus_03_dql/target/

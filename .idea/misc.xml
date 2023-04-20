@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/mybatisplus_01_quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/mybatisplus_03_dql/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatisplus_02_dml/pom.xml" />
       </list>
     </option>
   </component>

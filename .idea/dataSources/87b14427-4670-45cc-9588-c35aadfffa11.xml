@@ -786,7 +786,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="236" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="237" parent="5" name="user"/>
+    <table id="237" parent="5" name="tbl_user"/>
     <column id="238" parent="237" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>

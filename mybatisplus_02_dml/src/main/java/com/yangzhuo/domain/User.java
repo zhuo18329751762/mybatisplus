@@ -1,11 +1,13 @@
 package com.yangzhuo.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.sun.org.glassfish.gmbal.NameValue;
 
 @TableName("tbl_user")
 public class User {
+    //@TableId(type = IdType.INPUT)
     private Long id;
     private String name;
     //绑定数据库中的名称

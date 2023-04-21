@@ -1,9 +1,6 @@
 package com.yangzhuo.domain;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 
 @TableName("tbl_user")
 public class User {
@@ -18,6 +15,22 @@ public class User {
     //表示这个属性不参与sql语句
     @TableField(exist = false)
     private Integer online;
+
+    //逻辑删除字段，标记当前记录是否被删除
+    @TableLogic(value = "0",delval = "1")
+    private Integer deleted;
+
+    //乐观锁
+    @Version
+    private Integer version;
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
 
     public User() {
     }
